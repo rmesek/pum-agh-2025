@@ -19,8 +19,9 @@ dependencies = [
     "scikit-learn",
     "seaborn",
     "sentence_transformers",
+    "shap>=0.47.1",
     "torch",
-    "tqdm"
+    "tqdm",
 ]
 
 [dependency-groups]

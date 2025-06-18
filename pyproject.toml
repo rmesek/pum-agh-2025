@@ -8,23 +8,25 @@ readme = "README.md"
 requires-python = "==3.11.*"
 
 dependencies = [
-    "feature_engine",
+    "fast-langdetect",
+    "feature-engine",
+    "imbalanced-learn",
     "jupyter",
     "matplotlib",
     "pandas==2.*",
     "pillow",
+    "plotly",
     "pyarrow",
     "pynndescent",
+    "pyod",
     "scikit-fingerprints",
     "scikit-learn",
     "seaborn",
     "sentence_transformers",
-    "shap",
     "torch",
     "tqdm",
-    "imbalanced-learn",
-    "pyod",
-    "xgboost",
+    "xgboost-cpu",
+    "umap-learn",
 ]
 
 [dependency-groups]
@@ -32,6 +34,14 @@ dev = [
     "pre-commit",
     "ruff"
 ]
+
+[tool.uv.sources]
+torch = [{ index = "pytorch-cpu" }]
+
+[[tool.uv.index]]
+name = "pytorch-cpu"
+url = "https://download.pytorch.org/whl/cpu"
+explicit = true
 
 [tool.ruff.lint]
 ignore = [

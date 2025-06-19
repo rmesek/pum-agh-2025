@@ -2,3 +2,8 @@ lab2/images/
 lab2/abo-images-small.tar
 lab2/LICENSE-CC-BY-4.0.txt
 lab4/Liver_GSE14520_U133A.csv
+lab7/spotify-dataset-19212020-600k-tracks
+lab7/artists.csv
+lab7/artists.parquet
+lab7/tracks.csv
+lab7/tracks.parquet
